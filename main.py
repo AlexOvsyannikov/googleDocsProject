@@ -94,7 +94,7 @@ class Parser:
 
                     else:
                         self.options.append([{"option": '',
-                                              "free_type_answer": 1}])
+                                              "free_type_answer": 2}])
                 except:
                     self.entities.append("")
                     self.options.append([])
@@ -124,15 +124,21 @@ class DataSender:
     def get_probs_of_answers(self):
         for answer in self.list_of_answers:
             __prob = []
-            __name = []
             for option in answer:
                 __prob.append(option["amount"])
-                if option["name"] != '':
-                    __name.append(option["name"])
-                else:
-                    __name.append(option["text"])
-
             self.probs.append(__prob)
+
+    def get_naked_options(self):
+        for number_of_question in range(len(self.parser.options)):
+            __name = []
+            for number_of_option in range(len(self.parser.options[number_of_question])):
+                if self.parser.options[number_of_question][number_of_option]["option"] != '':
+                    __name.append(self.parser.options[number_of_question][number_of_option]["option"])
+                elif self.parser.options[number_of_question][number_of_option]["free_type_answer"] == 1:
+                    __name.append("1."+self.list_of_answers[number_of_question][number_of_option]["text"])
+                elif self.parser.options[number_of_question][number_of_option]["free_type_answer"] == 2:
+                    __name.append("2."+self.list_of_answers[number_of_question][number_of_option]["text"])
+
             self.naked_options.append(__name)
 
     def send_data(self):
@@ -153,24 +159,35 @@ class DataSender:
                     if "text" not in choice:
                         data_to_send["entry." + str(self.parser.entities[question_num])] = choice
 
-                    elif choice == "text.random":
-                        print(choice)
-                        data_to_send["entry." + str(self.parser.entities[question_num]) + ".other_option_response"] = \
-                            ''.join(random. \
-                                    choice('qwerйцукенгшщзхъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪ' +
-                                           'ФЫВАПРОЛДЖЭЁЯЧСМИТЬБЮtyuiopasdfghjklzxQWERTYUIOPASDFGHJKLZXCVBNMcvbnm') for
-                                    _ in range(20))
-                        data_to_send["entry." + str(self.parser.entities[question_num])] = "__other_option__"
+                    elif "text.random" in choice:
+                        if "1.text.random" == choice:
+                            data_to_send["entry." + str(self.parser.entities[question_num]) + ".other_option_response"] = \
+                                ''.join(random. \
+                                        choice('qwerйцукенгшщзхъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪ' +
+                                               'ФЫВАПРОЛДЖЭЁЯЧСМИТЬБЮtyuiopasdfghjklzxQWERTYUIOPASDFGHJKLZXCVBNMcvbnm') for
+                                        _ in range(20))
+                            data_to_send["entry." + str(self.parser.entities[question_num])] = "__other_option__"
+
+                        elif "2.text.random" == choice:
+                            data_to_send["entry." + str(self.parser.entities[question_num])] \
+                                = ''.join(random. \
+                                     choice('qwerйцукенгшщзхъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪ' +
+                                            'ФЫВАПРОЛДЖЭЁЯЧСМИТЬБЮtyuiopasdfghjklzxQWERTYUIOPASDFGHJKLZXCVBNMcvbnm') for
+                                        _ in range(20))
 
                     elif "text.provided_data:" in choice:
                         lines = choice.split("text.provided_data:")[1].strip()
                         if not self.provided_full_answers.get(question_num, 0):
                             self.provided_full_answers[question_num] = [line.strip() for line in lines.split(";") if line]
 
-                        data_to_send["entry." + str(self.parser.entities[question_num]) + ".other_option_response"] \
-                            = self.provided_full_answers[question_num].pop()
-                        data_to_send["entry." + str(self.parser.entities[question_num])] = "__other_option__"
-                        print(self.provided_full_answers)
+                        if "1.text.provided_data:" in choice:
+                            data_to_send["entry." + str(self.parser.entities[question_num]) + ".other_option_response"] \
+                                = self.provided_full_answers[question_num].pop()
+                            data_to_send["entry." + str(self.parser.entities[question_num])] = "__other_option__"
+
+                        elif "2.text.provided_data:" in choice:
+                            data_to_send["entry." + str(self.parser.entities[question_num])] \
+                                = self.provided_full_answers[question_num].pop()
 
 
                 except Exception as e:
@@ -191,8 +208,9 @@ class DataSender:
 
 
 if __name__ == '__main__':
-    url = "https://docs.google.com/forms/d/1SHrWtckuShjPA8npdVEBFGzF4FTJbUsgagrxr92sD7g/viewform?edit_requested=true"
+    # url = "https://docs.google.com/forms/d/1EzAEHK0QKT1mLV2JsNzvX4pHOTRcVa9BN4_KDLTRDaM/viewform?edit_requested=true"
     # url = 'https://docs.google.com/forms/d/1Yupf2u1NHP8-5XY_l0B0ZroLKAuqNuRuI1qn_gwVaW4/'
+    url = 'https://docs.google.com/forms/d/1SHrWtckuShjPA8npdVEBFGzF4FTJbUsgagrxr92sD7g/'
     getter_of_data = RequestSender(url)
     parser = Parser(url, getter_of_data)
     parser.parse_title()
@@ -200,8 +218,17 @@ if __name__ == '__main__':
     parser.parse_script()
     parser.parse_questions()
     parser.parse_options()
+    # print(parser.data)
+    # print(parser.options)
 
-    sender = DataSender(parser=parser, max_time_to_sleep=1, num_of_votes=100, list_of_answers=[
+    # [[1560889784, 'Введите ваше имя', 'None', 0, [[2074223823, 'None', 1]]], [1189296188, 'за кого', 'None', 2, [
+    #     [290615099, [['1', 'None', 'None', 'None', 0], ['2', 'None', 'None', 'None', 0]], 1, 'None', 'None', 'None',
+    #      'None', 'None', 0]]]]
+
+    with open('names', "r") as f:
+        names = f.read().replace("\n", ";") + ";"
+
+    sender = DataSender(parser=parser, max_time_to_sleep=1, num_of_votes=10, list_of_answers=[
         [
             {
                 "name": "Вариант 1",
@@ -221,7 +248,7 @@ if __name__ == '__main__':
             {
                 "name": "",
                 "amount": 70,
-                "text": "text.provided_data: Check;LOL;get_text;"
+                "text": "text.provided_data:1;2;3;4;"
             }
         ],
         [
@@ -266,4 +293,6 @@ if __name__ == '__main__':
     ])
 
     sender.get_probs_of_answers()
+    sender.get_naked_options()
+    # print(sender.naked_options)
     sender.send_data()
