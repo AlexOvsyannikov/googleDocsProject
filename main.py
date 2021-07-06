@@ -224,9 +224,9 @@ if __name__ == '__main__':
     # [[1560889784, 'Введите ваше имя', 'None', 0, [[2074223823, 'None', 1]]], [1189296188, 'за кого', 'None', 2, [
     #     [290615099, [['1', 'None', 'None', 'None', 0], ['2', 'None', 'None', 'None', 0]], 1, 'None', 'None', 'None',
     #      'None', 'None', 0]]]]
-
-    with open('names', "r") as f:
-        names = f.read().replace("\n", ";") + ";"
+    #
+    # with open('names', "r") as f:
+    #     names = f.read().replace("\n", ";") + ";"
 
     sender = DataSender(parser=parser, max_time_to_sleep=1, num_of_votes=10, list_of_answers=[
         [
