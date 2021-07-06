@@ -102,7 +102,8 @@ class Parser:
 
 
 class DataSender:
-    def __init__(self, parser: Parser, num_of_votes: int, max_time_to_sleep: int, list_of_answers: list, mode="percent"):
+    def __init__(self, parser: Parser, num_of_votes: int, max_time_to_sleep: int, list_of_answers: list,
+                 mode="percent"):
         """
         :param parser:
         :param num_of_votes: number of votes that you need
@@ -117,8 +118,8 @@ class DataSender:
         self.parser = parser
         self.probs = []
         self.naked_options = []
+        self.provided_full_answers = {}
         self.url = self.parser.url.split("viewform")[0]
-
 
     def get_probs_of_answers(self):
         for answer in self.list_of_answers:
@@ -130,7 +131,6 @@ class DataSender:
                     __name.append(option["name"])
                 else:
                     __name.append(option["text"])
-
 
             self.probs.append(__prob)
             self.naked_options.append(__name)
@@ -144,26 +144,34 @@ class DataSender:
         print("===========================")
         print(self.probs)
         print("===========================")
-        url = self.url+"formResponse"
+        url = self.url + "formResponse"
         for vote in range(self.num_of_votes):
             data_to_send = {}
             for question_num in range(len(self.parser.questions)):
                 try:
                     choice = random.choices(self.naked_options[question_num], weights=self.probs[question_num])[0]
                     if "text" not in choice:
-                       data_to_send["entry."+str(self.parser.entities[question_num])] = choice
+                        data_to_send["entry." + str(self.parser.entities[question_num])] = choice
 
                     elif choice == "text.random":
                         print(choice)
-                        data_to_send["entry." + str(self.parser.entities[question_num])+".other_option_response"] = \
+                        data_to_send["entry." + str(self.parser.entities[question_num]) + ".other_option_response"] = \
                             ''.join(random. \
-                                    choice('qwerйцукенгшщзхъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪ\
-                                    ФЫВАПРОЛДЖЭЁЯЧСМИТЬБЮtyuiopasdfghjklzxQWERTYUIOPASDFGHJKLZXCVBNMcvbnm') for _ in range(20))
+                                    choice('qwerйцукенгшщзхъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪ' +
+                                           'ФЫВАПРОЛДЖЭЁЯЧСМИТЬБЮtyuiopasdfghjklzxQWERTYUIOPASDFGHJKLZXCVBNMcvbnm') for
+                                    _ in range(20))
                         data_to_send["entry." + str(self.parser.entities[question_num])] = "__other_option__"
 
                     elif "text.provided_data:" in choice:
-                        lines = choice.split("text.provided_data:")[1]
-                        print(lines)
+                        lines = choice.split("text.provided_data:")[1].strip()
+                        if not self.provided_full_answers.get(question_num, 0):
+                            self.provided_full_answers[question_num] = [line.strip() for line in lines.split(";") if line]
+
+                        data_to_send["entry." + str(self.parser.entities[question_num]) + ".other_option_response"] \
+                            = self.provided_full_answers[question_num].pop()
+                        data_to_send["entry." + str(self.parser.entities[question_num])] = "__other_option__"
+                        print(self.provided_full_answers)
+
 
                 except Exception as e:
                     print("ERROR WITH THIS PARAMS ", self.parser.questions[question_num])
@@ -173,7 +181,7 @@ class DataSender:
 
             __time_to_sleep = random.randint(0, self.max_time_to_sleep)
             if r.status_code == requests.codes.OK:
-                print(f"ANSWER {vote+1} PROVIDED")
+                print(f"ANSWER {vote + 1} PROVIDED")
             else:
                 print("SOMETHING WRONG")
                 print(r)
@@ -213,7 +221,7 @@ if __name__ == '__main__':
             {
                 "name": "",
                 "amount": 70,
-                "text": "text.provided_data:AHAHAH, TEST;"
+                "text": "text.provided_data: Check;LOL;get_text;"
             }
         ],
         [
