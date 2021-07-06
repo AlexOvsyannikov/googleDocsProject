@@ -1,0 +1,44 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="17">
+            <item index="0" class="java.lang.String" itemvalue="varint" />
+            <item index="1" class="java.lang.String" itemvalue="lru-dict" />
+            <item index="2" class="java.lang.String" itemvalue="eth-abi" />
+            <item index="3" class="java.lang.String" itemvalue="eth-keys" />
+            <item index="4" class="java.lang.String" itemvalue="parsimonious" />
+            <item index="5" class="java.lang.String" itemvalue="web3" />
+            <item index="6" class="java.lang.String" itemvalue="bitarray" />
+            <item index="7" class="java.lang.String" itemvalue="eth-account" />
+            <item index="8" class="java.lang.String" itemvalue="eth-hash" />
+            <item index="9" class="java.lang.String" itemvalue="pyrsistent" />
+            <item index="10" class="java.lang.String" itemvalue="eth-rlp" />
+            <item index="11" class="java.lang.String" itemvalue="cytoolz" />
+            <item index="12" class="java.lang.String" itemvalue="eth-keyfile" />
+            <item index="13" class="java.lang.String" itemvalue="rlp" />
+            <item index="14" class="java.lang.String" itemvalue="ipfshttpclient" />
+            <item index="15" class="java.lang.String" itemvalue="eth-utils" />
+            <item index="16" class="java.lang.String" itemvalue="multiaddr" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="parse" />
+          <option value="UserBot.vk.make_database.users_get" />
+          <option value="UserBot.vk.make_database.get_id" />
+          <option value="UserBot.vk.make_database.func" />
+          <option value="get_image" />
+          <option value="get_data_from_csv_xls.Item" />
+          <option value="render_storage" />
+          <option value="third_week.decorator.decorator_hero" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

@@ -1,0 +1,528 @@
+/Users/ovsannikovaleksandr/GoogleDocksProject/venv/bin/python /Users/ovsannikovaleksandr/GoogleDocksProject/main.py
+<body class="freebirdLightBackground" data-is-prepopulate-mode="false" data-is-response-view="true" dir="ltr" itemscope="" itemtype="http://schema.org/CreativeWork/FormObject" jsaction="rcuQ6b:npT2md; click:KjsqPd;UxRBlf:GrC6Ef;oDrQPd:l9NwTb;dkdJAd:CMTGD;" jscontroller="OkF2xb">
+ <meta content="Тест форма" itemprop="name"/>
+ <meta content="Очень важный тест" itemprop="description"/>
+ <meta content="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png" itemprop="faviconUrl"/>
+ <meta content="https://docs.google.com/forms/d/e/1FAIpQLSdlEfMa_02b-9sT2gQ-CbRhih5twoVRJO1GsAL3PEWjvUohjg/viewform?edit_requested=true&amp;usp=embed_googleplus" itemprop="url"/>
+ <meta content="https://docs.google.com/forms/d/e/1FAIpQLSdlEfMa_02b-9sT2gQ-CbRhih5twoVRJO1GsAL3PEWjvUohjg/viewform?edit_requested=true&amp;embedded=true&amp;usp=embed_googleplus" itemprop="embedURL"/>
+ <meta content="https://ssl.gstatic.com/docs/forms/social/social-forms-big-2.png" itemprop="thumbnailUrl"/>
+ <meta content="https://ssl.gstatic.com/docs/forms/social/social-forms-big-2.png" itemprop="image"/>
+ <meta content="https://ssl.gstatic.com/docs/forms/social/social-forms-big-2.png" itemprop="imageUrl"/>
+ <div class="freebirdFormviewerViewFormContentWrapper">
+  <div class="freebirdFormviewerViewNavigationHeaderButtonContainer" jsaction="JIbuQc:KjsqPd" jscontroller="rYNGv">
+   <div aria-label="Отправить запрос" class="appsMaterialWizButtonEl hasIcon appsMaterialWizButtonPaperbuttonEl appsMaterialWizButtonPaperbuttonProtected freebirdFormviewerViewNavigationHeaderButton freebirdThemedProtectedButtonM2" data-redirect-url="https://docs.google.com/forms/d/1SHrWtckuShjPA8npdVEBFGzF4FTJbUsgagrxr92sD7g/edit?no_redirect=true&amp;usp=redirect_edit_m2" data-target="_blank" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;" jscontroller="VXdfxd" jsname="CHu7sb" jsshadow="" role="button" tabindex="0">
+    <div class="appsMaterialWizButtonPaperbuttonRipple exportInk" jsname="ksKsZd">
+    </div>
+    <div class="appsMaterialWizButtonPaperbuttonFocusOverlay exportOverlay">
+    </div>
+    <span class="appsMaterialWizButtonPaperbuttonContent exportButtonContent hasIcon" jsslot="">
+     <span class="appsMaterialWizButtonPaperbuttonIcon exportIcon">
+      <svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <path class="freebirdTextFillClass" d="M20.41 4.94l-1.35-1.35c-.78-.78-2.05-.78-2.83 0L13.4 6.41 3 16.82V21h4.18l10.46-10.46 2.77-2.77c.79-.78.79-2.05 0-2.83zm-14 14.12L5 19v-1.36l9.82-9.82 1.41 1.41-9.82 9.83z">
+       </path>
+       <path d="M0 0h24v24H0V0z" fill="none">
+       </path>
+      </svg>
+     </span>
+     <span class="appsMaterialWizButtonPaperbuttonLabel quantumWizButtonPaperbuttonLabel exportLabel">
+      <div class="freebirdFormviewerViewNavigationHeaderButtonContent">
+       Отправить запрос
+      </div>
+     </span>
+    </span>
+   </div>
+  </div>
+  <div class="freebirdFormviewerViewHeaderCard freebirdFormviewerViewCenteredContent freebirdViewerHeaderCard freebirdHeaderCard">
+  </div>
+  <div class="freebirdFormviewerViewCenteredContent">
+   <form action="https://docs.google.com/forms/d/e/1FAIpQLSdlEfMa_02b-9sT2gQ-CbRhih5twoVRJO1GsAL3PEWjvUohjg/formResponse" data-first-entry="0" data-is-first-page="true" data-last-entry="3" data-response="%.@.[]]" id="mG61Hd" jsmodel="TOfxwf Q91hve" method="POST" target="_self">
+    <div jsaction="rcuQ6b:rcuQ6b;UxRBlf:rcuQ6b;" jscontroller="yUS4Lc">
+     <div jsname="o6bZLc">
+     </div>
+    </div>
+    <div class="freebirdFormviewerViewFormCard exportFormCard">
+     <div class="freebirdFormviewerViewFormContent">
+      <div class="freebirdFormviewerViewNoPadding">
+       <div class="freebirdFormviewerViewHeaderHeader exportHeader">
+        <div class="freebirdFormviewerViewHeaderThemeStripe freebirdSolidBackground exportThemeStripe">
+        </div>
+        <div class="freebirdFormviewerViewHeaderHeaderBody">
+         <div class="freebirdFormviewerViewHeaderTitleRow">
+          <div aria-level="1" class="freebirdFormviewerViewHeaderTitle exportFormTitle freebirdCustomFont" dir="auto" role="heading">
+           Тест форма
+          </div>
+         </div>
+         <div class="freebirdFormviewerViewHeaderDescription" dir="auto">
+          Очень важный тест
+         </div>
+         <div class="freebirdCommonViewSecurequizSecureQuizBannerContainer" jsname="F0H8Yc">
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="freebirdFormviewerViewItemList" role="list">
+       <div class="freebirdFormviewerViewNumberedItemContainer" role="listitem">
+        <div class="m2" data-params='%.@.[1887683346,"Один вопрос",null,2,[[1666217080,[["Вариант 1",null,null,null,false],["Вариант 2",null,null,null,false],["Вариант 3",null,null,null,false],["",null,null,null,true]],false,[],[],null,null,null,false,null,[null,[]]]],null,null,null,[]],"i1","i2","i3",false]' jsmodel="CP1oW">
+         <div class="freebirdFormviewerComponentsQuestionBaseRoot" jsaction="EEvAHc:yfX9oc;" jscontroller="sWGJ4b">
+          <div class="freebirdFormviewerComponentsQuestionBaseHeader">
+           <div class="freebirdFormviewerComponentsQuestionBaseTitleDescContainer">
+            <div aria-level="3" class="freebirdFormviewerComponentsQuestionBaseTitle exportItemTitle freebirdCustomFont" id="i1" role="heading">
+             Один вопрос
+            </div>
+            <div class="freebirdFormviewerComponentsQuestionBaseDescription" id="i2">
+            </div>
+           </div>
+          </div>
+          <div class="freebirdFormviewerComponentsQuestionRadioRoot" jsaction="rcuQ6b:vZc4S;O22p3e:zjh6rb;b2trFe:eVidQc;JIbuQc:RgMCxe(YlCLKb);sPvj8e:d3sQLd;TYy3Ne:RgMCxe;" jscontroller="UmOCme" jsname="GCYh9b">
+           <input jsname="DTMEae" name="entry.1666217080_sentinel" type="hidden"/>
+           <div jsaction="sPvj8e:Gh295d" jscontroller="eFy6Rc" jsname="cnAzRb">
+            <div aria-describedby="i2 i3" aria-labelledby="i1" class="appsMaterialWizToggleRadiogroupGroupContainer exportGroupContainer freebirdFormviewerViewItemsRadiogroupRadioGroup" jsaction="keydown: I481le;JIbuQc:JIbuQc;rcuQ6b:rcuQ6b" jscontroller="wPRNsd" jsname="wCJL8" jsshadow="" role="radiogroup">
+             <span class="appsMaterialWizToggleRadiogroupGroupContent exportGroupContent" jsname="bN97Pc" jsslot="" role="presentation">
+              <div class="freebirdFormviewerComponentsQuestionRadioChoicesContainer">
+               <div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer">
+                <label class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio isDisabled" for="i5">
+                 <div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper">
+                  <div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled">
+                   <div aria-checked="false" aria-disabled="true" aria-label="Вариант 1" class="appsMaterialWizToggleRadiogroupEl exportToggleEl isDisabled" data-value="Вариант 1" id="i5" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="D8e5bc" jsshadow="" role="radio">
+                    <div class="appsMaterialWizToggleRadiogroupInk exportInk">
+                    </div>
+                    <div class="appsMaterialWizToggleRadiogroupInnerBox">
+                    </div>
+                    <div class="appsMaterialWizToggleRadiogroupRadioButtonContainer">
+                     <div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle">
+                      <div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle">
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="docssharedWizToggleLabeledContent">
+                   <div class="docssharedWizToggleLabeledPrimaryText">
+                    <span class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel" dir="auto">
+                     Вариант 1
+                    </span>
+                   </div>
+                  </div>
+                 </div>
+                </label>
+               </div>
+               <div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer">
+                <label class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio isDisabled" for="i8">
+                 <div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper">
+                  <div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled">
+                   <div aria-checked="false" aria-disabled="true" aria-label="Вариант 2" class="appsMaterialWizToggleRadiogroupEl exportToggleEl isDisabled" data-value="Вариант 2" id="i8" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="D8e5bc" jsshadow="" role="radio">
+                    <div class="appsMaterialWizToggleRadiogroupInk exportInk">
+                    </div>
+                    <div class="appsMaterialWizToggleRadiogroupInnerBox">
+                    </div>
+                    <div class="appsMaterialWizToggleRadiogroupRadioButtonContainer">
+                     <div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle">
+                      <div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle">
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="docssharedWizToggleLabeledContent">
+                   <div class="docssharedWizToggleLabeledPrimaryText">
+                    <span class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel" dir="auto">
+                     Вариант 2
+                    </span>
+                   </div>
+                  </div>
+                 </div>
+                </label>
+               </div>
+               <div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer">
+                <label class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio isDisabled" for="i11">
+                 <div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper">
+                  <div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled">
+                   <div aria-checked="false" aria-disabled="true" aria-label="Вариант 3" class="appsMaterialWizToggleRadiogroupEl exportToggleEl isDisabled" data-value="Вариант 3" id="i11" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="D8e5bc" jsshadow="" role="radio">
+                    <div class="appsMaterialWizToggleRadiogroupInk exportInk">
+                    </div>
+                    <div class="appsMaterialWizToggleRadiogroupInnerBox">
+                    </div>
+                    <div class="appsMaterialWizToggleRadiogroupRadioButtonContainer">
+                     <div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle">
+                      <div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle">
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="docssharedWizToggleLabeledContent">
+                   <div class="docssharedWizToggleLabeledPrimaryText">
+                    <span class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel" dir="auto">
+                     Вариант 3
+                    </span>
+                   </div>
+                  </div>
+                 </div>
+                </label>
+               </div>
+               <div class="freebirdFormviewerComponentsQuestionRadioChoice freebirdFormviewerComponentsQuestionRadioOptionContainer freebirdFormviewerComponentsQuestionRadioOtherChoice" jsname="MaDKvc">
+                <label class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionRadioRadio isDisabled" for="i14">
+                 <div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper">
+                  <div class="appsMaterialWizToggleRadiogroupElContainer exportContainerEl docssharedWizToggleLabeledControl freebirdThemedRadio freebirdThemedRadioDarkerDisabled">
+                   <div aria-checked="false" aria-disabled="true" class="appsMaterialWizToggleRadiogroupEl exportToggleEl isDisabled" data-value="__other_option__" id="i14" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="D8e5bc" jsshadow="" role="radio">
+                    <div class="appsMaterialWizToggleRadiogroupInk exportInk">
+                    </div>
+                    <div class="appsMaterialWizToggleRadiogroupInnerBox">
+                    </div>
+                    <div class="appsMaterialWizToggleRadiogroupRadioButtonContainer">
+                     <div class="appsMaterialWizToggleRadiogroupOffRadio exportOuterCircle">
+                      <div class="appsMaterialWizToggleRadiogroupOnRadio exportInnerCircle">
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="docssharedWizToggleLabeledContent">
+                   <div class="docssharedWizToggleLabeledPrimaryText">
+                    <span class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionRadioLabel" dir="auto">
+                     Другое:
+                    </span>
+                   </div>
+                  </div>
+                 </div>
+                </label>
+                <div class="freebirdFormviewerComponentsQuestionRadioOtherInput" jsaction="keydown:npT2md" jsshadow="">
+                 <span jsslot="">
+                  <div aria-disabled="true" class="quantumWizTextinputSimpleinputEl freebirdThemedInput freebirdFormviewerComponentsQuestionRadioOtherInputElement isDisabled" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV" jscontroller="pxq3x" jsname="R6ztRd" jsshadow="">
+                   <div class="quantumWizTextinputSimpleinputMainContent exportContent">
+                    <div class="quantumWizTextinputSimpleinputContentArea">
+                     <input aria-label="Другой ответ" autocomplete="off" class="quantumWizTextinputSimpleinputInput exportInput" data-initial-dir="auto" data-initial-value="" dir="auto" disabled="" jsname="YPqjbf" tabindex="0" type="text"/>
+                    </div>
+                    <div class="quantumWizTextinputSimpleinputUnderline exportUnderline">
+                    </div>
+                    <div class="quantumWizTextinputSimpleinputFocusUnderline exportFocusUnderline" jsname="XmnwAc">
+                    </div>
+                   </div>
+                  </div>
+                 </span>
+                </div>
+               </div>
+              </div>
+             </span>
+            </div>
+           </div>
+           <div class="freebirdFormviewerComponentsQuestionRadioFooter">
+            <div class="freebirdWidgetsDeselectableradioButton freebirdWidgetsDeselectableradioHidden" jsname="YlCLKb">
+             <div class="appsMaterialWizButtonEl appsMaterialWizButtonPaperbuttonEl appsMaterialWizButtonPaperbuttonText" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;" jscontroller="VXdfxd" jsshadow="" role="button" tabindex="0">
+              <div class="appsMaterialWizButtonPaperbuttonRipple exportInk" jsname="ksKsZd">
+              </div>
+              <div class="appsMaterialWizButtonPaperbuttonFocusOverlay exportOverlay">
+              </div>
+              <span class="appsMaterialWizButtonPaperbuttonContent exportButtonContent" jsslot="">
+               <span class="appsMaterialWizButtonPaperbuttonLabel quantumWizButtonPaperbuttonLabel exportLabel">
+                Отменить выбор
+               </span>
+              </span>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="freebirdFormviewerComponentsQuestionBaseValidationError" id="i3" jsname="Rfh2Tc" role="alert">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="freebirdFormviewerViewNumberedItemContainer" role="listitem">
+        <div class="m2" data-params='%.@.[1500428394,"Вопрос 2",null,4,[[622861690,[["Вариант 1",null,null,null,false],["Вариант 2",null,null,null,false],["Вариант 3",null,null,null,false],["Вариант 4",null,null,null,false]],false,[],[],null,null,null,false,null,[null,[]]]],null,null,null,[]],"i17","i18","i19",false]' jsmodel="CP1oW">
+         <div class="freebirdFormviewerComponentsQuestionBaseRoot" jsaction="EEvAHc:yfX9oc;" jscontroller="sWGJ4b">
+          <div class="freebirdFormviewerComponentsQuestionBaseHeader">
+           <div class="freebirdFormviewerComponentsQuestionBaseTitleDescContainer">
+            <div aria-level="3" class="freebirdFormviewerComponentsQuestionBaseTitle exportItemTitle freebirdCustomFont" id="i17" role="heading">
+             Вопрос 2
+            </div>
+            <div class="freebirdFormviewerComponentsQuestionBaseDescription" id="i18">
+            </div>
+           </div>
+          </div>
+          <div class="freebirdFormviewerComponentsQuestionCheckboxRoot" jsaction="rcuQ6b:vZc4S;O22p3e:zjh6rb;b2trFe:eVidQc;sPvj8e:sEDvJ;JIbuQc:d3sQLd(MPu53c);" jscontroller="sW52Ae">
+           <input jsname="DTMEae" name="entry.622861690_sentinel" type="hidden"/>
+           <div aria-describedby="i18 i19 i21" aria-labelledby="i17" class="" role="list">
+            <div class="freebirdFormviewerComponentsQuestionCheckboxChoice" jsaction="JIbuQc:aj0Jcf" jscontroller="lWjoT" jsname="MPu53c" role="listitem">
+             <label class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionCheckboxCheckbox isDisabled" for="i22">
+              <div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper">
+               <div aria-checked="false" aria-disabled="true" aria-label="Вариант 1" class="quantumWizTogglePapercheckboxEl appsMaterialWizTogglePapercheckboxCheckbox docssharedWizToggleLabeledControl freebirdThemedCheckbox freebirdThemedCheckboxDarkerDisabled freebirdMaterialWidgetsToggleLabeledCheckbox isDisabled" data-answer-value="Вариант 1" id="i22" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="EcW08c" jsname="FkQz1b" jsshadow="" role="checkbox">
+                <div class="quantumWizTogglePapercheckboxInk exportInk">
+                </div>
+                <div class="quantumWizTogglePapercheckboxInnerBox exportInnerBox">
+                </div>
+                <div class="quantumWizTogglePapercheckboxCheckMarkContainer">
+                 <div class="quantumWizTogglePapercheckboxCheckMark">
+                  <div class="quantumWizTogglePapercheckboxShort exportCheck">
+                  </div>
+                  <div class="quantumWizTogglePapercheckboxLong exportCheck">
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="docssharedWizToggleLabeledContent">
+                <div class="docssharedWizToggleLabeledPrimaryText">
+                 <span class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionCheckboxLabel" dir="auto">
+                  Вариант 1
+                 </span>
+                </div>
+               </div>
+              </div>
+             </label>
+            </div>
+            <div class="freebirdFormviewerComponentsQuestionCheckboxChoice" jsaction="JIbuQc:aj0Jcf" jscontroller="lWjoT" jsname="MPu53c" role="listitem">
+             <label class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionCheckboxCheckbox isDisabled" for="i25">
+              <div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper">
+               <div aria-checked="false" aria-disabled="true" aria-label="Вариант 2" class="quantumWizTogglePapercheckboxEl appsMaterialWizTogglePapercheckboxCheckbox docssharedWizToggleLabeledControl freebirdThemedCheckbox freebirdThemedCheckboxDarkerDisabled freebirdMaterialWidgetsToggleLabeledCheckbox isDisabled" data-answer-value="Вариант 2" id="i25" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="EcW08c" jsname="FkQz1b" jsshadow="" role="checkbox">
+                <div class="quantumWizTogglePapercheckboxInk exportInk">
+                </div>
+                <div class="quantumWizTogglePapercheckboxInnerBox exportInnerBox">
+                </div>
+                <div class="quantumWizTogglePapercheckboxCheckMarkContainer">
+                 <div class="quantumWizTogglePapercheckboxCheckMark">
+                  <div class="quantumWizTogglePapercheckboxShort exportCheck">
+                  </div>
+                  <div class="quantumWizTogglePapercheckboxLong exportCheck">
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="docssharedWizToggleLabeledContent">
+                <div class="docssharedWizToggleLabeledPrimaryText">
+                 <span class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionCheckboxLabel" dir="auto">
+                  Вариант 2
+                 </span>
+                </div>
+               </div>
+              </div>
+             </label>
+            </div>
+            <div class="freebirdFormviewerComponentsQuestionCheckboxChoice" jsaction="JIbuQc:aj0Jcf" jscontroller="lWjoT" jsname="MPu53c" role="listitem">
+             <label class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionCheckboxCheckbox isDisabled" for="i28">
+              <div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper">
+               <div aria-checked="false" aria-disabled="true" aria-label="Вариант 3" class="quantumWizTogglePapercheckboxEl appsMaterialWizTogglePapercheckboxCheckbox docssharedWizToggleLabeledControl freebirdThemedCheckbox freebirdThemedCheckboxDarkerDisabled freebirdMaterialWidgetsToggleLabeledCheckbox isDisabled" data-answer-value="Вариант 3" id="i28" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="EcW08c" jsname="FkQz1b" jsshadow="" role="checkbox">
+                <div class="quantumWizTogglePapercheckboxInk exportInk">
+                </div>
+                <div class="quantumWizTogglePapercheckboxInnerBox exportInnerBox">
+                </div>
+                <div class="quantumWizTogglePapercheckboxCheckMarkContainer">
+                 <div class="quantumWizTogglePapercheckboxCheckMark">
+                  <div class="quantumWizTogglePapercheckboxShort exportCheck">
+                  </div>
+                  <div class="quantumWizTogglePapercheckboxLong exportCheck">
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="docssharedWizToggleLabeledContent">
+                <div class="docssharedWizToggleLabeledPrimaryText">
+                 <span class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionCheckboxLabel" dir="auto">
+                  Вариант 3
+                 </span>
+                </div>
+               </div>
+              </div>
+             </label>
+            </div>
+            <div class="freebirdFormviewerComponentsQuestionCheckboxChoice" jsaction="JIbuQc:aj0Jcf" jscontroller="lWjoT" jsname="MPu53c" role="listitem">
+             <label class="docssharedWizToggleLabeledContainer freebirdFormviewerComponentsQuestionCheckboxCheckbox isDisabled" for="i31">
+              <div class="docssharedWizToggleLabeledLabelWrapper exportLabelWrapper">
+               <div aria-checked="false" aria-disabled="true" aria-label="Вариант 4" class="quantumWizTogglePapercheckboxEl appsMaterialWizTogglePapercheckboxCheckbox docssharedWizToggleLabeledControl freebirdThemedCheckbox freebirdThemedCheckboxDarkerDisabled freebirdMaterialWidgetsToggleLabeledCheckbox isDisabled" data-answer-value="Вариант 4" id="i31" jsaction="keydown:I481le;dyRcpb:dyRcpb;click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="EcW08c" jsname="FkQz1b" jsshadow="" role="checkbox">
+                <div class="quantumWizTogglePapercheckboxInk exportInk">
+                </div>
+                <div class="quantumWizTogglePapercheckboxInnerBox exportInnerBox">
+                </div>
+                <div class="quantumWizTogglePapercheckboxCheckMarkContainer">
+                 <div class="quantumWizTogglePapercheckboxCheckMark">
+                  <div class="quantumWizTogglePapercheckboxShort exportCheck">
+                  </div>
+                  <div class="quantumWizTogglePapercheckboxLong exportCheck">
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div class="docssharedWizToggleLabeledContent">
+                <div class="docssharedWizToggleLabeledPrimaryText">
+                 <span class="docssharedWizToggleLabeledLabelText exportLabel freebirdFormviewerComponentsQuestionCheckboxLabel" dir="auto">
+                  Вариант 4
+                 </span>
+                </div>
+               </div>
+              </div>
+             </label>
+            </div>
+           </div>
+           <div class="screenreaderOnly" id="i21">
+           </div>
+          </div>
+          <div class="freebirdFormviewerComponentsQuestionBaseValidationError" id="i19" jsname="Rfh2Tc" role="alert">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="freebirdFormviewerViewNumberedItemContainer" role="listitem">
+        <div class="m2" data-params='%.@.[2027322056,"Вопрос 3",null,3,[[1536117879,[["Вариант 1",null,null,null,false],["Вариант 2",null,null,null,false],["Вариант 3",null,null,null,false]],false,[],[],null,null,null,false,null,[null,[]]]],null,null,null,[]],"i34","i35","i36",false]' jsmodel="CP1oW">
+         <div class="freebirdFormviewerComponentsQuestionBaseRoot" jsaction="EEvAHc:yfX9oc;" jscontroller="sWGJ4b">
+          <div class="freebirdFormviewerComponentsQuestionBaseHeader">
+           <div class="freebirdFormviewerComponentsQuestionBaseTitleDescContainer">
+            <div aria-level="3" class="freebirdFormviewerComponentsQuestionBaseTitle exportItemTitle freebirdCustomFont" id="i34" role="heading">
+             Вопрос 3
+            </div>
+            <div class="freebirdFormviewerComponentsQuestionBaseDescription" id="i35">
+            </div>
+           </div>
+          </div>
+          <div class="freebirdFormviewerComponentsQuestionSelectRoot" jsaction="rcuQ6b:vZc4S;O22p3e:zjh6rb;b2trFe:eVidQc;JIbuQc:d3sQLd;" jscontroller="liFoG">
+           <div aria-describedby="i35 i36" aria-disabled="true" aria-expanded="false" aria-labelledby="i34" class="quantumWizMenuPaperselectEl appsMaterialWizMenuPaperselectSelect freebirdFormviewerComponentsQuestionSelectSelect freebirdThemedSelectDarkerDisabled noMaxWidth isDisabled" jsaction="click:cOuCgd(LgbsSe); keydown:I481le; keypress:Kr2w4b; mousedown:UX7yZ(LgbsSe),npT2md(preventDefault=true); mouseup:lbsD7e(LgbsSe); mouseleave:JywGue; touchstart:p6p2H(LgbsSe); touchmove:FwuNnf; touchend:yfqBxc(LgbsSe|preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd(LgbsSe); focus:AHmuwe; blur:O22p3e;b5SvAb:TvD9Pc;" jscontroller="YwHGTd" jsname="W85ice" jsshadow="" role="listbox">
+            <div jsname="LgbsSe" role="presentation">
+             <div class="quantumWizMenuPaperselectOptionList" jsname="d9BH4c" role="presentation">
+              <div aria-selected="true" class="quantumWizMenuPaperselectOption appsMaterialWizMenuPaperselectOption freebirdThemedSelectOptionDarkerDisabled exportOption isSelected isPlaceholder" data-value="" jsaction="" jsname="wQNmvb" role="option" tabindex="0">
+               <div class="quantumWizMenuPaperselectRipple exportInk" jsname="ksKsZd">
+               </div>
+               <span class="quantumWizMenuPaperselectContent exportContent" jsslot="">
+                Выбрать
+               </span>
+              </div>
+              <div class="appsMaterialWizMenuPaperselectOptionSeparator" role="presentation">
+              </div>
+              <div aria-selected="false" class="quantumWizMenuPaperselectOption appsMaterialWizMenuPaperselectOption freebirdThemedSelectOptionDarkerDisabled exportOption" data-value="Вариант 1" jsaction="" jsname="wQNmvb" role="option" tabindex="-1">
+               <div class="quantumWizMenuPaperselectRipple exportInk" jsname="ksKsZd">
+               </div>
+               <span class="quantumWizMenuPaperselectContent exportContent" jsslot="">
+                Вариант 1
+               </span>
+              </div>
+              <div aria-selected="false" class="quantumWizMenuPaperselectOption appsMaterialWizMenuPaperselectOption freebirdThemedSelectOptionDarkerDisabled exportOption" data-value="Вариант 2" jsaction="" jsname="wQNmvb" role="option" tabindex="-1">
+               <div class="quantumWizMenuPaperselectRipple exportInk" jsname="ksKsZd">
+               </div>
+               <span class="quantumWizMenuPaperselectContent exportContent" jsslot="">
+                Вариант 2
+               </span>
+              </div>
+              <div aria-selected="false" class="quantumWizMenuPaperselectOption appsMaterialWizMenuPaperselectOption freebirdThemedSelectOptionDarkerDisabled exportOption" data-value="Вариант 3" jsaction="" jsname="wQNmvb" role="option" tabindex="-1">
+               <div class="quantumWizMenuPaperselectRipple exportInk" jsname="ksKsZd">
+               </div>
+               <span class="quantumWizMenuPaperselectContent exportContent" jsslot="">
+                Вариант 3
+               </span>
+              </div>
+             </div>
+             <div class="quantumWizMenuPaperselectDropDown exportDropDown" role="presentation">
+             </div>
+            </div>
+            <div class="exportSelectPopup quantumWizMenuPaperselectPopup appsMaterialWizMenuPaperselectPopup" jsaction="click:dPTK6c(wQNmvb); mousedown:uYU8jb(wQNmvb); mouseup:LVEdXd(wQNmvb); mouseover:nfXz1e(wQNmvb); touchstart:Rh2fre(wQNmvb); touchmove:hvFWtf(wQNmvb); touchend:MkF9r(wQNmvb|preventMouseEvents=true)" jsname="V68bde" role="presentation" soy-server-key="5:pZtlf" style="display:none;">
+            </div>
+           </div>
+          </div>
+          <div class="freebirdFormviewerComponentsQuestionBaseValidationError" id="i36" jsname="Rfh2Tc" role="alert">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="freebirdFormviewerViewNavigationNavControls" data-is-receipt-checked="false" data-should-execute-invisible-captcha-challenge="false" data-shuffle-seed="-6335355058538296333" jsaction="rcuQ6b:npT2md;JIbuQc:Gl574d(QR6bsb),V3upec(GeGHKb),HiUbje(M2UYVd),NPBnCf(OCpkoe);" jscontroller="lSvzH">
+       <div class="freebirdFormviewerViewNavigationButtonsAndProgress">
+        <div class="freebirdFormviewerViewNavigationLeftButtons">
+         <div class="appsMaterialWizButtonEl appsMaterialWizButtonPaperbuttonEl appsMaterialWizButtonPaperbuttonFilled freebirdFormviewerViewNavigationSubmitButton freebirdThemedFilledButtonM2" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;" jscontroller="VXdfxd" jsname="M2UYVd" jsshadow="" role="button" tabindex="0">
+          <div class="appsMaterialWizButtonPaperbuttonRipple exportInk" jsname="ksKsZd">
+          </div>
+          <div class="appsMaterialWizButtonPaperbuttonFocusOverlay exportOverlay">
+          </div>
+          <span class="appsMaterialWizButtonPaperbuttonContent exportButtonContent" jsslot="">
+           <span class="appsMaterialWizButtonPaperbuttonLabel quantumWizButtonPaperbuttonLabel exportLabel">
+            Отправить
+           </span>
+          </span>
+         </div>
+        </div>
+       </div>
+       <div class="freebirdFormviewerViewNavigationPasswordWarning">
+        Никогда не используйте формы Google для передачи паролей.
+       </div>
+      </div>
+      <input name="fvv" type="hidden" value="1"/>
+      <input name="draftResponse" type="hidden" value='[null,null,"-6335355058538296333"]
+'/>
+      <input name="pageHistory" type="hidden" value="0"/>
+      <input name="fbzx" type="hidden" value="-6335355058538296333"/>
+     </div>
+    </div>
+   </form>
+   <div>
+    <div class="freebirdFormviewerViewFooterDisclaimer freebirdDisclaimerColor">
+     Компания Google не имеет никакого отношения к этому контенту.
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEfMa_02b-9sT2gQ-CbRhih5twoVRJO1GsAL3PEWjvUohjg/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSdlEfMa_02b-9sT2gQ-CbRhih5twoVRJO1GsAL3PEWjvUohjg/viewform?edit_requested%3Dtrue" target="_blank">
+      Сообщение о нарушении
+     </a>
+     -
+     <a href="https://policies.google.com/terms" target="_blank">
+      Условия использования
+     </a>
+     -
+     <a href="https://policies.google.com/privacy" target="_blank">
+      Политика конфиденциальности
+     </a>
+    </div>
+    <div class="freebirdFormviewerViewFooterImageContainer freebirdFormviewerViewFooterPageBreak">
+     <a dir="auto" href="//www.google.com/forms/about/?utm_source=product&amp;utm_medium=forms_logo&amp;utm_campaign=forms">
+      <img alt="Google" height="24px" src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_dark_clr_74x24px.svg" width="74px"/>
+      <span class="freebirdCommonViewProductnameLockupText">
+       Формы
+      </span>
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="freebirdFormviewerViewFeedbackSubmitFeedbackButton" jsaction="rcuQ6b:npT2md;JIbuQc:feqbab;" jscontroller="KFVhZe">
+   <div aria-disabled="false" aria-label="Сообщить о проблеме" class="quantumWizButtonEl quantumWizButtonPapericonbuttonEl quantumWizButtonPapericonbuttonLight isUndragged" data-tooltip="Сообщить о проблеме" data-tooltip-horizontal-offset="0" data-tooltip-position="right" data-tooltip-vertical-offset="1" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;" jscontroller="VXdfxd" jsname="hlkvRb" jsshadow="" role="button" tabindex="0">
+    <div class="quantumWizButtonPapericonbuttonRipple exportInk" jsname="ksKsZd">
+    </div>
+    <span class="quantumWizButtonPapericonbuttonContent" jsslot="">
+     <span class="exportIcon" style="top: -12px">
+      <div class="freebirdMaterialIconIconEl">
+       <div aria-hidden="true" class="freebirdMaterialIconIconImage freebirdMaterialIconIconDarkIcon freebird-qp-icon-feedback-b">
+       </div>
+       <div aria-hidden="true" class="freebirdMaterialIconIconImage freebirdMaterialIconIconLightIcon freebird-qp-icon-feedback-w">
+       </div>
+      </div>
+     </span>
+    </span>
+   </div>
+  </div>
+ </div>
+ <script nonce="QdMaE4I0E7jVZykkM/M2ug" type="text/javascript">
+  var FB_PUBLIC_LOAD_DATA_ = [null,["Очень важный тест",[[1887683346,"Один вопрос",null,2,[[1666217080,[["Вариант 1",null,null,null,0]
+,["Вариант 2",null,null,null,0]
+,["Вариант 3",null,null,null,0]
+,["",null,null,null,1]
+]
+,0,null,null,null,null,null,0]
+]
+]
+,[1500428394,"Вопрос 2",null,4,[[622861690,[["Вариант 1",null,null,null,0]
+,["Вариант 2",null,null,null,0]
+,["Вариант 3",null,null,null,0]
+,["Вариант 4",null,null,null,0]
+]
+,0,null,null,null,null,null,0]
+]
+]
+,[2027322056,"Вопрос 3",null,3,[[1536117879,[["Вариант 1",null,null,null,0]
+,["Вариант 2",null,null,null,0]
+,["Вариант 3",null,null,null,0]
+]
+,0,null,null,null,null,null,0]
+]
+]
+]
+,null,null,null,[0,0]
+,null,null,"Тест форма",49,[null,null,null,null,0]
+,null,null,null,null,[2]
+]
+,"/forms","Новая форма",null,null,null,"",null,0,0,null,"",0,"e/1FAIpQLSdlEfMa_02b-9sT2gQ-CbRhih5twoVRJO1GsAL3PEWjvUohjg",0,"[]",0,0]
+;
+ </script>
+ <script id="base-js" nonce="QdMaE4I0E7jVZykkM/M2ug" src="https://www.gstatic.com/_/freebird/_/js/k=freebird.v.ru.0oYTdEENk0o.O/d=1/rs=AMjVe6jVXPzvj2uwsmqfELaUNZ0zq1ch6A/m=viewer_base">
+ </script>
+</body>
+
+Process finished with exit code 0
