@@ -25,7 +25,7 @@ class RequestSender(AbstractRequestSender):
 
 class Parser:
     def __init__(self, url: str, sender: AbstractRequestSender):
-        self.url = url
+        self.url = sender.url
         self.soup = BeautifulSoup(sender.request_data(), 'lxml').find('body')
         self.title = None
         self.description = None
