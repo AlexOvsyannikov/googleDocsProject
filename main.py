@@ -7,9 +7,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-# https://docs.google.com/forms/d/1SHrWtckuShjPA8npdVEBFGzF4FTJbUsgagrxr92sD7g/viewform?edit_requested=true
-
-
 class AbstractRequestSender(ABC):
     def __init__(self, url):
         self.url = url
@@ -189,7 +186,6 @@ class DataSender:
                             data_to_send["entry." + str(self.parser.entities[question_num])] \
                                 = self.provided_full_answers[question_num].pop()
 
-
                 except Exception as e:
                     print("ERROR WITH THIS PARAMS ", self.parser.questions[question_num])
                     print(e)
@@ -206,93 +202,3 @@ class DataSender:
             print(f"SLEEPING FOR {__time_to_sleep} seconds")
             sleep(__time_to_sleep)
 
-
-if __name__ == '__main__':
-    # url = "https://docs.google.com/forms/d/1EzAEHK0QKT1mLV2JsNzvX4pHOTRcVa9BN4_KDLTRDaM/viewform?edit_requested=true"
-    # url = 'https://docs.google.com/forms/d/1Yupf2u1NHP8-5XY_l0B0ZroLKAuqNuRuI1qn_gwVaW4/'
-    url = 'https://docs.google.com/forms/d/1SHrWtckuShjPA8npdVEBFGzF4FTJbUsgagrxr92sD7g/'
-    getter_of_data = RequestSender(url)
-    parser = Parser(url, getter_of_data)
-    parser.parse_title()
-    parser.parse_description()
-    parser.parse_script()
-    parser.parse_questions()
-    parser.parse_options()
-    # print(parser.data)
-    # print(parser.options)
-
-    # [[1560889784, 'Введите ваше имя', 'None', 0, [[2074223823, 'None', 1]]], [1189296188, 'за кого', 'None', 2, [
-    #     [290615099, [['1', 'None', 'None', 'None', 0], ['2', 'None', 'None', 'None', 0]], 1, 'None', 'None', 'None',
-    #      'None', 'None', 0]]]]
-    #
-    # with open('names', "r") as f:
-    #     names = f.read().replace("\n", ";") + ";"
-
-    sender = DataSender(parser=parser, max_time_to_sleep=1, num_of_votes=10, list_of_answers=[
-        [
-            {
-                "name": "Вариант 1",
-                "amount": 3,
-                "text": None
-            },
-            {
-                "name": "Вариант 2",
-                "amount": 10,
-                "text": None
-            },
-            {
-                "name": "Вариант 3",
-                "amount": 17,
-                "text": None
-            },
-            {
-                "name": "",
-                "amount": 70,
-                "text": "text.provided_data:1;2;3;4;"
-            }
-        ],
-        [
-            {
-                "name": "Вариант 1",
-                "amount": 70,
-                "text": None
-            },
-            {
-                "name": "Вариант 2",
-                "amount": 10,
-                "text": None
-            },
-            {
-                "name": "Вариант 3",
-                "amount": 17,
-                "text": None
-            },
-            {
-                "name": "Вариант 4",
-                "amount": 3,
-                "text": None
-            }
-        ],
-        [
-            {
-                "name": "Вариант 1",
-                "amount": 70,
-                "text": None
-            },
-            {
-                "name": "Вариант 2",
-                "amount": 10,
-                "text": None
-            },
-            {
-                "name": "Вариант 3",
-                "amount": 17,
-                "text": None
-            }
-        ]
-    ])
-
-    sender.get_probs_of_answers()
-    sender.get_naked_options()
-    # print(sender.naked_options)
-    sender.send_data()
