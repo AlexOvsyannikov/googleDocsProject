@@ -24,7 +24,7 @@ class RequestSender(AbstractRequestSender):
 
 
 class Parser:
-    def __init__(self, url: str, sender: AbstractRequestSender):
+    def __init__(self, sender: AbstractRequestSender):
         self.url = sender.url
         self.soup = BeautifulSoup(sender.request_data(), 'lxml').find('body')
         self.title = None
@@ -202,3 +202,173 @@ class DataSender:
             print(f"SLEEPING FOR {__time_to_sleep} seconds")
             sleep(__time_to_sleep)
 
+
+if __name__ == '__main__':
+    # url = "https://docs.google.com/forms/d/1EzAEHK0QKT1mLV2JsNzvX4pHOTRcVa9BN4_KDLTRDaM/viewform?edit_requested=true"
+    # url = 'https://docs.google.com/forms/d/1Yupf2u1NHP8-5XY_l0B0ZroLKAuqNuRuI1qn_gwVaW4/'
+    url = 'https://docs.google.com/forms/d/e/1FAIpQLSeUvwATpaEkWE_QbE2LtZ9RWXPzJKinubMsHxD4xHrJsgrG6A/viewform'
+    getter_of_data = RequestSender(url)
+    parser = Parser(sender=getter_of_data)
+    parser.parse_title()
+    parser.parse_description()
+    parser.parse_script()
+    parser.parse_questions()
+    parser.parse_options()
+    print(parser.options)
+    # print(parser.data)
+    # print(parser.options)
+
+    # [[1560889784, 'Введите ваше имя', 'None', 0, [[2074223823, 'None', 1]]], [1189296188, 'за кого', 'None', 2, [
+    #     [290615099, [['1', 'None', 'None', 'None', 0], ['2', 'None', 'None', 'None', 0]], 1, 'None', 'None', 'None',
+    #      'None', 'None', 0]]]]
+    #
+    # with open('names', "r") as f:
+    #     names = f.read().replace("\n", ";") + ";"
+
+    sender = DataSender(parser=parser, max_time_to_sleep=600, num_of_votes=5, list_of_answers=[
+        [
+            {
+                "name": "13-15",
+                "amount": 30,
+                "text": None
+            },
+            {
+                "name": "16-18",
+                "amount": 35,
+                "text": None
+            },
+            {
+                "name": "Больше 18",
+                "amount": 35,
+                "text": None
+            }
+        ],
+        [
+            {
+                "name": "да",
+                "amount": 90,
+                "text": None
+            },
+            {
+                "name": "не  уверен(а)",
+                "amount": 6,
+                "text": None
+            },
+            {
+                "name": "нет",
+                "amount": 4,
+                "text": None
+            }
+        ],
+        [
+            {
+                "name": "",
+                "amount": 100,
+                "text": "text.provided_data:хз;не знаю как ответить;сложно;управление человеком;что-то из психологии;"
+            }
+        ],
+        [
+            {
+                "name": "да",
+                "amount": 90,
+                "text": None
+            },
+            {
+                "name": "нет",
+                "amount": 10,
+                "text": None
+            }
+        ],
+        [
+            {
+                "name": "да",
+                "amount": 60,
+                "text": None
+            },
+            {
+                "name": "скорее да, чем нет",
+                "amount": 20,
+                "text": None
+            },
+            {
+                "name": "скорее нет, чем да",
+                "amount": 15,
+                "text": None
+            },
+            {
+                "name": "нет",
+                "amount": 5,
+                "text": None
+            }
+        ],
+        [
+            {
+                "name": "да",
+                "amount": 80,
+                "text": None
+            },
+            {
+                "name": "нет",
+                "amount": 20,
+                "text": None
+            }
+        ],
+        [
+            {
+                "name": "позитивную",
+                "amount": 25,
+                "text": None
+            },
+            {
+                "name": "негативную",
+                "amount": 5,
+                "text": None
+            },
+            {
+                "name": "Как позитивную, так и негативную",
+                "amount": 70,
+                "text": None
+            }
+        ],
+        [
+            {
+                "name": "да",
+                "amount": 5,
+                "text": None
+            },
+            {
+                "name": "чаще да,чем нет",
+                "amount": 5,
+                "text": None
+            },
+            {
+                "name": "чаще нет,чем да",
+                "amount": 25,
+                "text": None
+            },
+            {
+                "name": "нет",
+                "amount": 65,
+                "text": None
+            }
+        ],
+        [
+            {
+                "name": "да",
+                "amount": 90,
+                "text": None
+            },
+            {
+                "name": "нет",
+                "amount": 10,
+                "text": None
+            }
+        ]
+    ])
+
+
+    sender.get_probs_of_answers()
+    sender.get_naked_options()
+    print(sender.naked_options)
+    print(sender.probs)
+    sender.send_data()
