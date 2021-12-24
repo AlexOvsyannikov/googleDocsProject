@@ -1,10 +1,39 @@
 from flask import Flask, render_template, request, jsonify, redirect
 
-from formsParser import RequestSender, Parser
+from formsParser import RequestSender, Parser, DataSender
 from hashlib import sha256
 
 app = Flask(__name__, template_folder='template', static_folder='static')
 sessions = {}
+
+
+def connect_answers_and_probs(options, probs):
+    form = []
+    _count = 0
+    for i in range(len(options)):
+        _l = []
+        for j in range(len(options[i])):
+            _l.append(int(probs[_count]))
+            _count += 1
+        form.append(_l)
+    return form
+
+
+def make_suitable_format(options, probs):
+    print(options)
+    _poll = []
+    for i in range(len(options)):
+        _answer = []
+        for j in range(len(options[i])):
+            _answer.append({
+                "name": options[i][j]['option'],
+                "amount": probs[i][j],
+                "text": None if not options[i][j]['free_type_answer'] else 'text.provided_data:rest;'
+            })
+        _poll.append(_answer)
+    print(_poll)
+    return _poll
+
 
 @app.route('/')
 def index():
@@ -48,7 +77,26 @@ def get_form():
 
 @app.route('/getProbes', methods=["POST"])
 def get_probes():
-    print(request.get_json())
+    req = request.get_json()
+    getter_of_data = RequestSender(sessions[req['session']])
+    parser = Parser(sender=getter_of_data)
+    parser.parse_title()
+    parser.parse_description()
+    parser.parse_script()
+    parser.parse_questions()
+    parser.parse_options()
+    probs = connect_answers_and_probs(options=parser.options, probs=req['data'])
+    answers = make_suitable_format(options=parser.options, probs=probs)
+    sender = DataSender(parser=parser, max_time_to_sleep=int(req['sleep']),
+                        num_of_votes=int(req['votes']),
+                        list_of_answers=answers)
+    print(probs)
+    print(answers)
+    sender.get_probs_of_answers()
+    sender.get_naked_options()
+    print(sender.naked_options)
+    print(sender.probs)
+    sender.send_data()
     return 'okl'
 
 

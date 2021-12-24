@@ -17,12 +17,15 @@
                     <input name="opt" type="number" placeholder="Введите процент ответов" required="required"/>
                 {% else %}
                     <p>* Free type</p>
-                    <input name="opt" type="text" placeholder="Введите варианты ответов" required="required"/>
+                    <input name="free_type" type="text" placeholder="Введите варианты ответов" required="required"/>
+                    <br>
+                    <input name="opt" type="text" placeholder="Введите процент ответов" required="required"/>
                 {% endif %}
             {% endfor %}
         {% endfor %}
         <br><br>
         <input type="number" placeholder="Число голосов" id="votes">
+        <input type="number" placeholder="Максимальное время сна" id="sleep">
         <input type="button" value="Начать накрутку" onclick="startVoting()">
     </form>
     <div style="visibility: hidden" id="session">{{session}}</div>

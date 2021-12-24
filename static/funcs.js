@@ -44,7 +44,8 @@ function startVoting(){
     to_send["data"] = options;
     to_send["session"] = document.getElementById('session').textContent;
     to_send['votes'] = document.getElementById('votes').value;
-    if (to_send['votes'] === '' && ready === true){
+    to_send['sleep'] = document.getElementById('sleep').value;
+    if ((to_send['votes'] === '' || to_send['sleep'] === '') && ready === true){
             alert('Все поля должны быть заполнены');
             ready = false;
         }
