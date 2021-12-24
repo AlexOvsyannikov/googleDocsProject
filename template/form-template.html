@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="{{ url_for('static', filename='funcs.js') }}"></script>
+    <title>{{title}}</title>
+</head>
+<body id="content">
+    <h1>{{title}}</h1>
+    <h2>{{description}}</h2>
+    <form id="form">
+        {%for i in range(questions|length)%}
+            <h3>{{questions[i]}}</h3>
+            {% for j in range(options[i]|length)%}
+                {% if options[i][j]['free_type_answer'] == 0%}
+                    <p>* {{options[i][j]['option']}}</p>
+                    <input name="opt" type="number" placeholder="Введите процент ответов" required="required"/>
+                {% else %}
+                    <p>* Free type</p>
+                    <input name="opt" type="text" placeholder="Введите варианты ответов" required="required"/>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+        <br><br>
+        <input type="number" placeholder="Число голосов" id="votes">
+        <input type="button" value="Начать накрутку" onclick="startVoting()">
+    </form>
+    <div style="visibility: hidden" id="session">{{session}}</div>
+</body>
+</html>

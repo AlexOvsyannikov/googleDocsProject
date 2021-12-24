@@ -73,6 +73,21 @@ class Parser:
             if len(i) > 4:
                 self.questions.append(i[1])
 
+    def parse_if_essential(self):
+        pass
+        # TODO finish
+        # essential = []
+        # for question in self.questions:
+        #     essential = False
+        #     divs = self.soup.select(f'div:contains("{question}")')
+        #     for div in divs:
+        #         if div.find('span', attrs={'aria-label':'Сделать этот вопрос обязательным'}) and '*' in div.text:
+        #
+        #             essential = True
+        #     print(question)
+        #     print(essential)
+        #     # print(divs)
+
     def parse_options(self):
         """Gets entities and options from data"""
         for question in self.data:
