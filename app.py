@@ -1,6 +1,8 @@
+from asyncio import sleep
+
 from flask import Flask, render_template, request, jsonify, redirect
 
-from formsParser import RequestSender, Parser, DataSender
+from formsParser import RequestSender, Parser, DataSender, AsyncDataSender
 from hashlib import sha256
 
 app = Flask(__name__, template_folder='template', static_folder='static')
@@ -87,7 +89,7 @@ def get_probes():
     parser.parse_options()
     probs = connect_answers_and_probs(options=parser.options, probs=req['data'])
     answers = make_suitable_format(options=parser.options, probs=probs)
-    sender = DataSender(parser=parser, max_time_to_sleep=int(req['sleep']),
+    sender = AsyncDataSender(parser=parser, max_time_to_sleep=int(req['sleep']),
                         num_of_votes=int(req['votes']),
                         list_of_answers=answers)
     print(probs)
@@ -96,7 +98,10 @@ def get_probes():
     sender.get_naked_options()
     print(sender.naked_options)
     print(sender.probs)
-    sender.send_data()
+    sender.work()
+
+    print('###')
+    # print(sender.get_info())
     return 'okl'
 
 

@@ -1,3 +1,12 @@
+from formsParser import AsyncDataSender
+
+
+class Task:
+    def __init__(self, sender: AsyncDataSender):
+        pass
+
+
+
 class TaskManager:
     def __init__(self):
         self.all_tasks = []
