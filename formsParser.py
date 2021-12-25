@@ -133,6 +133,8 @@ class DataSender:
         self.provided_full_answers = {}
         self.url = self.parser.url.split("viewform")[0]
 
+        self.info = []
+
     def get_probs_of_answers(self):
         for answer in self.list_of_answers:
             __prob = []
@@ -162,6 +164,10 @@ class DataSender:
         print("===========================")
         print(self.probs)
         print("===========================")
+        self.info.append(self.num_of_votes)
+        self.info.append(self.parser.questions)
+        self.info.append(self.naked_options)
+        self.info.append(self.probs)
         url = self.url + "formResponse"
         for vote in range(self.num_of_votes):
             data_to_send = {}
@@ -202,6 +208,7 @@ class DataSender:
                                 = self.provided_full_answers[question_num].pop()
 
                 except Exception as e:
+                    self.info.append(f"ERROR WITH THIS PARAMS {self.parser.questions[question_num]}")
                     print("ERROR WITH THIS PARAMS ", self.parser.questions[question_num])
                     print(e)
 
@@ -210,12 +217,19 @@ class DataSender:
             __time_to_sleep = random.randint(0, self.max_time_to_sleep)
             if r.status_code == requests.codes.OK:
                 print(f"ANSWER {vote + 1} PROVIDED")
+                self.info.append(f"ANSWER {vote + 1} PROVIDED")
             else:
+                self.info.append(f"SOMETHING WRONG {r}")
                 print("SOMETHING WRONG")
                 print(r)
                 print(r.text)
+
+            self.info.append(f"SLEEPING FOR {__time_to_sleep} seconds")
             print(f"SLEEPING FOR {__time_to_sleep} seconds")
             sleep(__time_to_sleep)
+
+    def get_info(self):
+        return self.get_info()
 
 
 if __name__ == '__main__':
