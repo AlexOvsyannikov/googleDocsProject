@@ -49,6 +49,10 @@ function startVoting(){
             alert('Все поля должны быть заполнены');
             ready = false;
         }
+    if (parseInt(to_send['votes']) < 5){
+        alert('Минимальное число голосов - 5!');
+        ready = false;
+    }
 
 
     if (ready){
@@ -66,5 +70,9 @@ function startVoting(){
     }
     xhr.send(JSON.stringify(to_send));
     }
+
+}
+
+function refresh(){
 
 }

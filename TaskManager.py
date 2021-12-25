@@ -1,9 +1,12 @@
+from asyncio import sleep
+
 from formsParser import AsyncDataSender
 
 
 class Task:
     def __init__(self, sender: AsyncDataSender):
         self.sender = sender
+        self.name = sender.parser.title
 
     def check_alive(self):
         return self.sender.check_alive()
@@ -33,6 +36,7 @@ class TaskManager:
     def remove(self, _id):
         _ind = self.task_indexer.get(_id, 0)
         if not _ind:
+            print(self.task_indexer)
             raise ValueError("TASK NOT FOUND")
         else:
             self.task_indexer[_id] = None

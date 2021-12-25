@@ -104,7 +104,13 @@ def get_probes():
 
 @app.route('/id/<_id>')
 def get_process(_id):
-    return _id
+    try:
+        _task = task_manager.get(_id)
+    except ValueError:
+        return render_template('not_found.html'), 404
+
+    return render_template('process_page.html',
+                           title=_task.name)
 
 
 if __name__ == '__main__':
