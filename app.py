@@ -102,9 +102,10 @@ def get_probes():
     return _process_id
 
 
-@app.route('/id', methods=["POST"])
-def get_process():
-    return 'o'
+@app.route('/id/<_id>')
+def get_process(_id):
+    return _id
+
 
 if __name__ == '__main__':
     app.run()

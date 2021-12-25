@@ -61,7 +61,7 @@ function startVoting(){
 
     xhr.onreadystatechange = function() {//Вызывает функцию при смене состояния.
         if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
-            alert(xhr.response)
+            document.location.href = '/id/' + xhr.response
         }
     }
     xhr.send(JSON.stringify(to_send));
