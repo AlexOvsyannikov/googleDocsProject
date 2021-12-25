@@ -217,16 +217,16 @@ class DataSender:
 
             __time_to_sleep = random.randint(0, self.max_time_to_sleep)
             if r.status_code == requests.codes.OK:
-                # print(f"ANSWER {vote + 1} PROVIDED")
+                print(f"ANSWER {vote + 1} PROVIDED")
                 self.info.append(f"ANSWER {vote + 1} PROVIDED")
             else:
                 self.info.append(f"SOMETHING WRONG {r}")
-                # print("SOMETHING WRONG")
-                # print(r)
-                # print(r.text)
+                print("SOMETHING WRONG")
+                print(r)
+                print(r.text)
 
             self.info.append(f"SLEEPING FOR {__time_to_sleep} seconds")
-            # print(f"SLEEPING FOR {__time_to_sleep} seconds")
+            print(f"SLEEPING FOR {__time_to_sleep} seconds")
             sleep(__time_to_sleep)
 
     def get_info(self):

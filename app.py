@@ -2,11 +2,13 @@ from asyncio import sleep
 
 from flask import Flask, render_template, request, jsonify, redirect
 
+from TaskManager import Task, TaskManager
 from formsParser import RequestSender, Parser, DataSender, AsyncDataSender
 from hashlib import sha256
 
 app = Flask(__name__, template_folder='template', static_folder='static')
 sessions = {}
+task_manager = TaskManager()
 
 
 def connect_answers_and_probs(options, probs):
@@ -90,20 +92,19 @@ def get_probes():
     probs = connect_answers_and_probs(options=parser.options, probs=req['data'])
     answers = make_suitable_format(options=parser.options, probs=probs)
     sender = AsyncDataSender(parser=parser, max_time_to_sleep=int(req['sleep']),
-                        num_of_votes=int(req['votes']),
-                        list_of_answers=answers)
-    print(probs)
-    print(answers)
-    sender.get_probs_of_answers()
-    sender.get_naked_options()
-    print(sender.naked_options)
-    print(sender.probs)
-    sender.work()
+                             num_of_votes=int(req['votes']),
+                             list_of_answers=answers)
 
-    print('###')
-    # print(sender.get_info())
-    return 'okl'
+    task = Task(sender)
+    _process_id = sha256(str(answers).encode()).hexdigest()
+    task_manager.put(_process_id, task)
+    task.start()
+    return _process_id
 
+
+@app.route('/id', methods=["POST"])
+def get_process():
+    return 'o'
 
 if __name__ == '__main__':
     app.run()

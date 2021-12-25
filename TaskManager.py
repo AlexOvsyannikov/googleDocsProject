@@ -3,8 +3,15 @@ from formsParser import AsyncDataSender
 
 class Task:
     def __init__(self, sender: AsyncDataSender):
-        pass
+        self.sender = sender
 
+    def check_alive(self):
+        return self.sender.check_alive()
+
+    def start(self):
+        self.sender.get_probs_of_answers()
+        self.sender.get_naked_options()
+        self.sender.work()
 
 
 class TaskManager:
@@ -12,7 +19,7 @@ class TaskManager:
         self.all_tasks = []
         self.task_indexer = {}
 
-    def put(self, _id, task):
+    def put(self, _id, task: Task):
         self.all_tasks.append(task)
         self.task_indexer[_id] = self.all_tasks.index(task)
 
