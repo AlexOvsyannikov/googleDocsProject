@@ -27,8 +27,13 @@ class TaskManager:
         self.task_indexer[_id] = self.all_tasks.index(task)
 
     def get(self, _id):
-        _ind = self.task_indexer.get(_id, 0)
-        if not _ind:
+        _ind = self.task_indexer.get(_id, -1)
+        # print('###')
+        # print(_id)
+        # print(self.task_indexer)
+        # print(self.all_tasks)
+        # print('###')
+        if _ind == -1:
             raise ValueError("TASK NOT FOUND")
         else:
             return self.all_tasks[_ind]

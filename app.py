@@ -96,7 +96,11 @@ def get_probes():
                              list_of_answers=answers)
 
     task = Task(sender)
-    _process_id = sha256(str(answers).encode()).hexdigest()
+    _process_id = sha256((str(answers)
+                          + str(req['votes'])
+                          + str(req['sleep']))
+                         .encode()).hexdigest()
+    print(_process_id)
     task_manager.put(_process_id, task)
     task.start()
     return _process_id
@@ -110,7 +114,9 @@ def get_process(_id):
         return render_template('not_found.html'), 404
 
     return render_template('process_page.html',
-                           title=_task.name)
+                           title=_task.name,
+                           answers=_task.sender.list_of_answers,
+                           url=_task.sender.url)
 
 
 if __name__ == '__main__':
